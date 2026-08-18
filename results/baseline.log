@@ -1,0 +1,20 @@
+prompt_len=8 n_new_tokens=16 batch_size=2
+config={'vocab_size': 64, 'd_model': 32, 'n_heads': 4, 'n_layers': 2, 'd_ff': 64, 'max_seq_len': 256}
+final_sequence_shape=(2, 24)
+step=0 prefix_len=8 time_s=0.000509
+step=1 prefix_len=9 time_s=0.000259
+step=2 prefix_len=10 time_s=0.000237
+step=3 prefix_len=11 time_s=0.000322
+step=4 prefix_len=12 time_s=0.000268
+step=5 prefix_len=13 time_s=0.000377
+step=6 prefix_len=14 time_s=0.000415
+step=7 prefix_len=15 time_s=0.000285
+step=8 prefix_len=16 time_s=0.000255
+step=9 prefix_len=17 time_s=0.000361
+step=10 prefix_len=18 time_s=0.000626
+step=11 prefix_len=19 time_s=0.000812
+step=12 prefix_len=20 time_s=0.000307
+step=13 prefix_len=21 time_s=0.000400
+step=14 prefix_len=22 time_s=0.000325
+step=15 prefix_len=23 time_s=0.000405
+total_time_s=0.006164
