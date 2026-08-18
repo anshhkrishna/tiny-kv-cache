@@ -1,0 +1,120 @@
+config={'vocab_size': 64, 'd_model': 32, 'n_heads': 4, 'n_layers': 2, 'd_ff': 64, 'max_seq_len': 1030}
+prefix_lengths=(8, 16, 32, 64, 128, 256, 512, 1024) n_probe_steps=6 repeats=5 batch_size=1
+
+--- per-step measurements (median over repeats) ---
+impl=uncached prefix_len=8 step_index=0 time_s=0.00021140 flops=311296
+impl=uncached prefix_len=9 step_index=1 time_s=0.00020490 flops=352512
+impl=uncached prefix_len=10 step_index=2 time_s=0.00027569 flops=394240
+impl=uncached prefix_len=11 step_index=3 time_s=0.00020775 flops=436480
+impl=uncached prefix_len=12 step_index=4 time_s=0.00022784 flops=479232
+impl=uncached prefix_len=13 step_index=5 time_s=0.00021815 flops=522496
+impl=uncached prefix_len=16 step_index=0 time_s=0.00023417 flops=655360
+impl=uncached prefix_len=17 step_index=1 time_s=0.00023621 flops=700672
+impl=uncached prefix_len=18 step_index=2 time_s=0.00029498 flops=746496
+impl=uncached prefix_len=19 step_index=3 time_s=0.00025584 flops=792832
+impl=uncached prefix_len=20 step_index=4 time_s=0.00025849 flops=839680
+impl=uncached prefix_len=21 step_index=5 time_s=0.00028570 flops=887040
+impl=uncached prefix_len=32 step_index=0 time_s=0.00035552 flops=1441792
+impl=uncached prefix_len=33 step_index=1 time_s=0.00041217 flops=1495296
+impl=uncached prefix_len=34 step_index=2 time_s=0.00041791 flops=1549312
+impl=uncached prefix_len=35 step_index=3 time_s=0.00039882 flops=1603840
+impl=uncached prefix_len=36 step_index=4 time_s=0.00044056 flops=1658880
+impl=uncached prefix_len=37 step_index=5 time_s=0.00040945 flops=1714432
+impl=uncached prefix_len=64 step_index=0 time_s=0.00139955 flops=3407872
+impl=uncached prefix_len=65 step_index=1 time_s=0.00145289 flops=3477760
+impl=uncached prefix_len=66 step_index=2 time_s=0.00152696 flops=3548160
+impl=uncached prefix_len=67 step_index=3 time_s=0.00148464 flops=3619072
+impl=uncached prefix_len=68 step_index=4 time_s=0.00163817 flops=3690496
+impl=uncached prefix_len=69 step_index=5 time_s=0.00159393 flops=3762432
+impl=uncached prefix_len=128 step_index=0 time_s=0.00466037 flops=8912896
+impl=uncached prefix_len=129 step_index=1 time_s=0.00471533 flops=9015552
+impl=uncached prefix_len=130 step_index=2 time_s=0.00479406 flops=9118720
+impl=uncached prefix_len=131 step_index=3 time_s=0.00481460 flops=9222400
+impl=uncached prefix_len=132 step_index=4 time_s=0.00485871 flops=9326592
+impl=uncached prefix_len=133 step_index=5 time_s=0.00495205 flops=9431296
+impl=uncached prefix_len=256 step_index=0 time_s=0.01820624 flops=26214400
+impl=uncached prefix_len=257 step_index=1 time_s=0.01760599 flops=26382592
+impl=uncached prefix_len=258 step_index=2 time_s=0.01756558 flops=26551296
+impl=uncached prefix_len=259 step_index=3 time_s=0.01836292 flops=26720512
+impl=uncached prefix_len=260 step_index=4 time_s=0.01878056 flops=26890240
+impl=uncached prefix_len=261 step_index=5 time_s=0.01892221 flops=27060480
+impl=uncached prefix_len=512 step_index=0 time_s=0.05220242 flops=85983232
+impl=uncached prefix_len=513 step_index=1 time_s=0.05356732 flops=86282496
+impl=uncached prefix_len=514 step_index=2 time_s=0.05281315 flops=86582272
+impl=uncached prefix_len=515 step_index=3 time_s=0.05169831 flops=86882560
+impl=uncached prefix_len=516 step_index=4 time_s=0.05333670 flops=87183360
+impl=uncached prefix_len=517 step_index=5 time_s=0.05477728 flops=87484672
+impl=uncached prefix_len=1024 step_index=0 time_s=0.20962604 flops=306184192
+impl=uncached prefix_len=1025 step_index=1 time_s=0.18423034 flops=306745600
+impl=uncached prefix_len=1026 step_index=2 time_s=0.18715565 flops=307307520
+impl=uncached prefix_len=1027 step_index=3 time_s=0.18851478 flops=307869952
+impl=uncached prefix_len=1028 step_index=4 time_s=0.18817813 flops=308432896
+impl=uncached prefix_len=1029 step_index=5 time_s=0.19094914 flops=308996352
+impl=cached prefix_len=8 step_index=0 time_s=0.00023758 flops=311296
+impl=cached prefix_len=9 step_index=1 time_s=0.00022173 flops=39168
+impl=cached prefix_len=10 step_index=2 time_s=0.00017183 flops=39424
+impl=cached prefix_len=11 step_index=3 time_s=0.00015871 flops=39680
+impl=cached prefix_len=12 step_index=4 time_s=0.00015543 flops=39936
+impl=cached prefix_len=13 step_index=5 time_s=0.00015992 flops=40192
+impl=cached prefix_len=16 step_index=0 time_s=0.00024517 flops=655360
+impl=cached prefix_len=17 step_index=1 time_s=0.00017051 flops=41216
+impl=cached prefix_len=18 step_index=2 time_s=0.00016441 flops=41472
+impl=cached prefix_len=19 step_index=3 time_s=0.00016299 flops=41728
+impl=cached prefix_len=20 step_index=4 time_s=0.00016318 flops=41984
+impl=cached prefix_len=21 step_index=5 time_s=0.00015972 flops=42240
+impl=cached prefix_len=32 step_index=0 time_s=0.00040733 flops=1441792
+impl=cached prefix_len=33 step_index=1 time_s=0.00019527 flops=45312
+impl=cached prefix_len=34 step_index=2 time_s=0.00017307 flops=45568
+impl=cached prefix_len=35 step_index=3 time_s=0.00017230 flops=45824
+impl=cached prefix_len=36 step_index=4 time_s=0.00016275 flops=46080
+impl=cached prefix_len=37 step_index=5 time_s=0.00016838 flops=46336
+impl=cached prefix_len=64 step_index=0 time_s=0.00112166 flops=3407872
+impl=cached prefix_len=65 step_index=1 time_s=0.00023605 flops=53504
+impl=cached prefix_len=66 step_index=2 time_s=0.00018300 flops=53760
+impl=cached prefix_len=67 step_index=3 time_s=0.00017524 flops=54016
+impl=cached prefix_len=68 step_index=4 time_s=0.00023604 flops=54272
+impl=cached prefix_len=69 step_index=5 time_s=0.00017430 flops=54528
+impl=cached prefix_len=128 step_index=0 time_s=0.00369462 flops=8912896
+impl=cached prefix_len=129 step_index=1 time_s=0.00027264 flops=69888
+impl=cached prefix_len=130 step_index=2 time_s=0.00020495 flops=70144
+impl=cached prefix_len=131 step_index=3 time_s=0.00019151 flops=70400
+impl=cached prefix_len=132 step_index=4 time_s=0.00025086 flops=70656
+impl=cached prefix_len=133 step_index=5 time_s=0.00019866 flops=70912
+impl=cached prefix_len=256 step_index=0 time_s=0.01451644 flops=26214400
+impl=cached prefix_len=257 step_index=1 time_s=0.00039083 flops=102656
+impl=cached prefix_len=258 step_index=2 time_s=0.00033466 flops=102912
+impl=cached prefix_len=259 step_index=3 time_s=0.00030976 flops=103168
+impl=cached prefix_len=260 step_index=4 time_s=0.00025804 flops=103424
+impl=cached prefix_len=261 step_index=5 time_s=0.00025548 flops=103680
+impl=cached prefix_len=512 step_index=0 time_s=0.07352826 flops=85983232
+impl=cached prefix_len=513 step_index=1 time_s=0.00073009 flops=168192
+impl=cached prefix_len=514 step_index=2 time_s=0.00044973 flops=168448
+impl=cached prefix_len=515 step_index=3 time_s=0.00034881 flops=168704
+impl=cached prefix_len=516 step_index=4 time_s=0.00036033 flops=168960
+impl=cached prefix_len=517 step_index=5 time_s=0.00033035 flops=169216
+impl=cached prefix_len=1024 step_index=0 time_s=0.20850292 flops=306184192
+impl=cached prefix_len=1025 step_index=1 time_s=0.00080213 flops=299264
+impl=cached prefix_len=1026 step_index=2 time_s=0.00063232 flops=299520
+impl=cached prefix_len=1027 step_index=3 time_s=0.00058810 flops=299776
+impl=cached prefix_len=1028 step_index=4 time_s=0.00052910 flops=300032
+impl=cached prefix_len=1029 step_index=5 time_s=0.00055701 flops=300288
+
+--- step_index=0 sanity check: prefill cost matches an uncached step ---
+prefix_len=8 uncached_time_s=0.00021140 cached_prefill_time_s=0.00023758 flops_match=True
+prefix_len=16 uncached_time_s=0.00023417 cached_prefill_time_s=0.00024517 flops_match=True
+prefix_len=32 uncached_time_s=0.00035552 cached_prefill_time_s=0.00040733 flops_match=True
+prefix_len=64 uncached_time_s=0.00139955 cached_prefill_time_s=0.00112166 flops_match=True
+prefix_len=128 uncached_time_s=0.00466037 cached_prefill_time_s=0.00369462 flops_match=True
+prefix_len=256 uncached_time_s=0.01820624 cached_prefill_time_s=0.01451644 flops_match=True
+prefix_len=512 uncached_time_s=0.05220242 cached_prefill_time_s=0.07352826 flops_match=True
+prefix_len=1024 uncached_time_s=0.20962604 cached_prefill_time_s=0.20850292 flops_match=True
+
+--- scaling fits over step_index >= 1 (value = a * prefix_len^b) ---
+impl=uncached metric=wall_clock exponent_b=1.5698 a=2.743187e-06 r_squared=0.9780
+impl=uncached metric=flops exponent_b=1.4369 a=1.063590e+04 r_squared=0.9916
+impl=cached metric=wall_clock exponent_b=0.2826 a=6.942362e-05 r_squared=0.7856
+impl=cached metric=flops exponent_b=0.4369 a=1.063590e+04 r_squared=0.9160
+
+--- wall-clock crossover (step_index >= 1 only) ---
+fitted_crossover_prefix_len=12.31
+empirical_crossover_prefix_len=10
