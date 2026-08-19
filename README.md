@@ -1,4 +1,4 @@
-# tiny-kv-cache
+# kv-cache-crossover
 
 > causal self attention from scratch in numpy, with and without a kv cache, measuring the actual per step compute
 
